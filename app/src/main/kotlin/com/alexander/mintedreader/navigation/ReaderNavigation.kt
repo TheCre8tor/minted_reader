@@ -1,3 +1,9 @@
 package com.alexander.mintedreader.navigation
 
-class ReaderNavigation {}
+import androidx.compose.runtime.Composable
+import androidx.navigation.compose.rememberNavController
+
+@Composable
+fun ReaderNavigation(): Unit {
+    val navController = rememberNavController()
+}
