@@ -14,6 +14,7 @@ import com.alexander.mintedreader.screens.update.BookUpdateScreen
 
 @Composable
 fun ReaderNavigation() {
+    // Plugin: hilt-navigation-compose
     val navController = rememberNavController()
 
     NavHost(
