@@ -59,7 +59,11 @@ dependencies {
 
     // Dagger - Hilt
     implementation("com.google.dagger:hilt-android:2.48.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.48.1")
+    kapt("com.google.dagger:hilt-compiler:2.48.1")
+
+    // Firebase Auth and Firestore
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-firestore-ktx")
 
     // base
     implementation("androidx.core:core-ktx:1.12.0")
