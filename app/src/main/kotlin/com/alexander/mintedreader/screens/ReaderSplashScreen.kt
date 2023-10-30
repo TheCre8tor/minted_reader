@@ -18,11 +18,13 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import kotlinx.coroutines.delay
 
 
 @Composable
@@ -42,12 +44,15 @@ fun ReaderSplashScreen(navController: NavController) {
                 }
             )
         )
+
+        delay(2000L)
     }
 
     Surface(
         modifier = Modifier
             .padding(15.dp)
-            .size(300.dp),
+            .size(300.dp)
+            .scale(scale.value),
         shape = CircleShape,
         color = Color.Red.copy(alpha = 0.6f),
         border = BorderStroke(width = 2.dp, color = Color.Red)
